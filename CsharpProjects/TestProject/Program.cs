@@ -19,4 +19,9 @@
 // Console.WriteLine($"double : {double.MinValue} to {double.MaxValue} (with ~15-17 digits of precision)");
 // Console.WriteLine($"decimal: {decimal.MinValue} to {decimal.MaxValue} (with 28-29 digits of precision)");
 
-int[] data = new int[3];
+// int[] data = new int[3];
+
+int first = 2;
+string second = "4";
+string result = first + second;
+Console.WriteLine(result);
