@@ -59,8 +59,42 @@
 // int result = Convert.ToInt32(value1) * Convert.ToInt32(value2);
 // Console.WriteLine(result);
 
-int value = (int)1.5m; // casting truncates
-Console.WriteLine(value);
+// int value = (int)1.5m; // casting truncates
+// Console.WriteLine(value);
 
-int value2 = Convert.ToInt32(1.5m); // converting rounds up
-Console.WriteLine(value2);
+// int value2 = Convert.ToInt32(1.5m); // converting rounds up
+// Console.WriteLine(value2);
+
+
+// Unit 3
+
+// string value = "bad";
+// int result = 0;
+// if (int.TryParse(value, out result))
+// {
+//    Console.WriteLine($"Measurement: {result}");
+// }
+// else
+// {
+//    Console.WriteLine("Unable to report the measurement.");
+// }
+// if (result > 0)
+//     Console.WriteLine($"Measurement (w/ offset): {50 + result}");
+
+using System.Text;
+
+string[] values = { "12.3", "45", "ABC", "11", "DEF" };
+var message = new StringBuilder();
+decimal total = 0;
+decimal parsedInt = 0;
+
+foreach(var value in values)
+{
+    if (decimal.TryParse(value, out parsedInt))
+        total += parsedInt;
+    else
+        message.Append(value);
+}
+
+Console.WriteLine($"Message: {message.ToString()}");
+Console.WriteLine($"Total: {total}");
