@@ -81,4 +81,20 @@
 // if (result > 0)
 //     Console.WriteLine($"Measurement (w/ offset): {50 + result}");
 
+using System.Text;
+
 string[] values = { "12.3", "45", "ABC", "11", "DEF" };
+var message = new StringBuilder();
+decimal total = 0;
+decimal parsedInt = 0;
+
+foreach(var value in values)
+{
+    if (decimal.TryParse(value, out parsedInt))
+        total += parsedInt;
+    else
+        message.Append(value);
+}
+
+Console.WriteLine($"Message: {message.ToString()}");
+Console.WriteLine($"Total: {total}");
