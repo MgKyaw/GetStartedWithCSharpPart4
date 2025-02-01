@@ -65,15 +65,18 @@
 // int value2 = Convert.ToInt32(1.5m); // converting rounds up
 // Console.WriteLine(value2);
 
-string value = "bad";
-int result = 0;
-if (int.TryParse(value, out result))
-{
-   Console.WriteLine($"Measurement: {result}");
-}
-else
-{
-   Console.WriteLine("Unable to report the measurement.");
-}
-if (result > 0)
-    Console.WriteLine($"Measurement (w/ offset): {50 + result}");
+
+// Unit 3
+
+// string value = "bad";
+// int result = 0;
+// if (int.TryParse(value, out result))
+// {
+//    Console.WriteLine($"Measurement: {result}");
+// }
+// else
+// {
+//    Console.WriteLine("Unable to report the measurement.");
+// }
+// if (result > 0)
+//     Console.WriteLine($"Measurement (w/ offset): {50 + result}");
