@@ -80,3 +80,5 @@
 // }
 // if (result > 0)
 //     Console.WriteLine($"Measurement (w/ offset): {50 + result}");
+
+string[] values = { "12.3", "45", "ABC", "11", "DEF" };
