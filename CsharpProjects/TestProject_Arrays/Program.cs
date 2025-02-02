@@ -1,18 +1,20 @@
-﻿string[] pallets = [ "B14", "A11", "B12", "A13" ];
+﻿// Unit 1,2
 
-Console.WriteLine("Sorted...");
-Array.Sort(pallets);
+// string[] pallets = [ "B14", "A11", "B12", "A13" ];
 
-foreach (var pallet in pallets)
-{
-    Console.WriteLine($"-- {pallet}");
-}
+// Console.WriteLine("Sorted...");
+// Array.Sort(pallets);
 
-Console.WriteLine("");
-Console.WriteLine("Reversed...");
-Array.Reversed(pallets);
+// foreach (var pallet in pallets)
+// {
+//     Console.WriteLine($"-- {pallet}");
+// }
 
-foreach (var pallet in pallets)
-{
-    Console.WriteLine($"-- pallet");
-}
+// Console.WriteLine("");
+// Console.WriteLine("Reversed...");
+// Array.Reversed(pallets);
+
+// foreach (var pallet in pallets)
+// {
+//     Console.WriteLine($"-- pallet");
+// }
