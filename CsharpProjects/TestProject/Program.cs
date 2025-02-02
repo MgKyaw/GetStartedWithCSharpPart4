@@ -85,7 +85,7 @@ using System.Text;
 
 string[] values = { "12.3", "45", "ABC", "11", "DEF" };
 var message = new StringBuilder();
-decimal total = 0m;
+var total = 0m;
 decimal parsedInt = 0;
 
 foreach(var value in values)
