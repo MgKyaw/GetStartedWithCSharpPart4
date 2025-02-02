@@ -89,9 +89,9 @@ var total = 0m;
 
 foreach(var value in values)
 {
-    var parsedInt = 0m;
-    if (decimal.TryParse(value, out parsedInt))
-        total += parsedInt;
+    decimal number;
+    if (decimal.TryParse(value, out number))
+        total += number;
     else
         message.Append(value);
 }
