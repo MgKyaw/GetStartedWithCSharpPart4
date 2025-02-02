@@ -81,20 +81,22 @@
 // if (result > 0)
 //     Console.WriteLine($"Measurement (w/ offset): {50 + result}");
 
-using System.Text;
+// Unit 4 and 5
 
-string[] values = { "12.3", "45", "ABC", "11", "DEF" };
-var message = new StringBuilder();
-var total = 0m;
+// using System.Text;
 
-foreach(var value in values)
-{
-    decimal number;
-    if (decimal.TryParse(value, out number))
-        total += number;
-    else
-        message.Append(value);
-}
+// string[] values = { "12.3", "45", "ABC", "11", "DEF" };
+// var message = new StringBuilder();
+// var total = 0m;
 
-Console.WriteLine($"Message: {message.ToString()}");
-Console.WriteLine($"Total: {total}");
+// foreach(var value in values)
+// {
+//     decimal number;
+//     if (decimal.TryParse(value, out number))
+//         total += number;
+//     else
+//         message.Append(value);
+// }
+
+// Console.WriteLine($"Message: {message.ToString()}");
+// Console.WriteLine($"Total: {total}");
