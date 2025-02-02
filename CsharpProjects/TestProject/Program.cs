@@ -86,10 +86,10 @@ using System.Text;
 string[] values = { "12.3", "45", "ABC", "11", "DEF" };
 var message = new StringBuilder();
 var total = 0m;
-decimal parsedInt = 0;
 
 foreach(var value in values)
 {
+    var parsedInt = 0m;
     if (decimal.TryParse(value, out parsedInt))
         total += parsedInt;
     else
