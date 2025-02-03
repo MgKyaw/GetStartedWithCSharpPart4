@@ -55,12 +55,14 @@ string pangram = "The quick brown fox jumps over the lazy dog";
 
 string[] items = pangram.Split(' ');
 
+string[] revertedItems = new string[items.Length];
+
 for(int i=0; i < items.Length; i++)
 {
     char[] chars = items[i].ToCharArray();
     Array.Reverse(chars);
-    items[i] = new string(chars);
+    revertedItems[i] = new string(chars);
 }
 
-string result = String.Join(' ', items);
+string result = String.Join(' ', revertedItems);
 Console.WriteLine(result);
