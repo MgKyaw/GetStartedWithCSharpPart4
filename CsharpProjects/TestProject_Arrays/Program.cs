@@ -52,3 +52,15 @@
 // Unit 5
 
 string pangram = "The quick brown fox jumps over the lazy dog";
+
+string[] items = pangram.Split(' ');
+
+for(int i=0; i < items.Length; i++)
+{
+    char[] chars = items[i].ToCharArray();
+    Array.Reverse(chars);
+    items[i] = new string(chars);
+}
+
+string result = String.Join(' ', items);
+Console.WriteLine(result);
