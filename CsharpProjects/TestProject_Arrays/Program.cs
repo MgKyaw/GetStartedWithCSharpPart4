@@ -33,3 +33,8 @@
 // {
 //     Console.WriteLine($"-- {pallet}");
 // }
+
+// Unit 4
+
+string value = "abc123";
+char[] valueArray = value.ToCharArray();
