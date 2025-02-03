@@ -48,3 +48,7 @@
 // {
 //     Console.WriteLine(item);
 // }
+
+// Unit 5
+
+string pangram = "The quick brown fox jumps over the lazy dog";
