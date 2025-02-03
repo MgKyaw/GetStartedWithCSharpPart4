@@ -51,18 +51,18 @@
 
 // Unit 5
 
-string pangram = "The quick brown fox jumps over the lazy dog";
+// string pangram = "The quick brown fox jumps over the lazy dog";
 
-string[] items = pangram.Split(' ');
+// string[] items = pangram.Split(' ');
 
-string[] revertedItems = new string[items.Length];
+// string[] revertedItems = new string[items.Length];
 
-for(int i=0; i < items.Length; i++)
-{
-    char[] chars = items[i].ToCharArray();
-    Array.Reverse(chars);
-    revertedItems[i] = new string(chars);
-}
+// for(int i=0; i < items.Length; i++)
+// {
+//     char[] chars = items[i].ToCharArray();
+//     Array.Reverse(chars);
+//     revertedItems[i] = new string(chars);
+// }
 
-string result = String.Join(' ', revertedItems);
-Console.WriteLine(result);
+// string result = String.Join(' ', revertedItems);
+// Console.WriteLine(result);
