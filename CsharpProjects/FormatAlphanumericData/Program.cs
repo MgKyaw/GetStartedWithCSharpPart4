@@ -14,3 +14,7 @@
 // Console.WriteLine($"{first} {second}!");
 // Console.WriteLine($"{second} {first}!");
 // Console.WriteLine($"{first} {first} {first}!");
+
+// Formatting numbers
+decimal measurement = 123456.78912m;
+Console.WriteLine($"Measurement: {measurement:N} units");
