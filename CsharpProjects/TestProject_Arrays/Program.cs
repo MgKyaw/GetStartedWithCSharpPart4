@@ -66,3 +66,24 @@
 
 // string result = String.Join(' ', revertedItems);
 // Console.WriteLine(result);
+
+// Unit 7
+
+string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
+int validOrderIDLength = 4;
+
+string[] orderIDs = orderStream.Split(',');
+
+Array.Sort(orderIDs);
+
+foreach (string orderID in orderIDs)
+{
+    if(orderID.Length == validOrderIDLength)
+    {
+        Console.WriteLine($"{orderID}");
+    }
+    else
+    {
+        Console.WriteLine($"{orderID}\t- Error");
+    }
+}
