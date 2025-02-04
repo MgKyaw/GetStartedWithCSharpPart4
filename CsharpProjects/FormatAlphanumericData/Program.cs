@@ -1,7 +1,7 @@
 ﻿// Unit 2
 
-string first = "Hello";
-string second = "World";
+// string first = "Hello";
+// string second = "World";
 
 // // Composite Formatting
 // string result = string.Format("{0} {1}!", first, second);
