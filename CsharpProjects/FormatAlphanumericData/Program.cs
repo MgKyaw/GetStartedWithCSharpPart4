@@ -42,3 +42,4 @@ decimal taxPercentage = .15825m;
 decimal total = 3185.19m;
 
 Console.WriteLine($"Invoice Number: {invoiceNumber}");
+Console.WriteLine($"    Shares: {productShares:N3} Product");
