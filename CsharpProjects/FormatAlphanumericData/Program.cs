@@ -19,3 +19,7 @@
 // decimal measurement = 123456.78912m;
 // // Console.WriteLine($"Measurement: {measurement:N} units");
 // Console.WriteLine($"Measurement: {measurement:N4} units");
+
+// Formatting percentage
+decimal tax = .36785m;
+Console.WriteLine($"Tax rate: {tax:P2}");
