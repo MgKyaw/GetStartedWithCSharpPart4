@@ -56,3 +56,9 @@
 // Console.WriteLine(input.PadLeft(12, '-'));
 // Console.WriteLine(input.PadRight(12, '-'));
 
+string paymentId = "769C";
+
+var formattedLine = paymentId.PadRight(6);
+
+Console.WriteLine(formattedLine);
+
