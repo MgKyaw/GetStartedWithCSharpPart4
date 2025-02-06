@@ -45,3 +45,4 @@ Console.WriteLine($"Invoice Number: {invoiceNumber}");
 Console.WriteLine($"    Shares: {productShares:N3} Product");
 Console.WriteLine($"        Sub Total: {subtotal:C}");
 Console.WriteLine($"            Tax: {taxPercentage:P2}");
+Console.WriteLine($"        Total Billed: {total:C}");
