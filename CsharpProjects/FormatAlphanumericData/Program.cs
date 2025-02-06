@@ -46,3 +46,9 @@
 // Console.WriteLine($"        Sub Total: {subtotal:C}");
 // Console.WriteLine($"            Tax: {taxPercentage:P2}");
 // Console.WriteLine($"        Total Billed: {total:C}");
+
+// Unit 4
+
+string input = "Pad this";
+Console.WriteLine(input.PadLeft(12));
+
