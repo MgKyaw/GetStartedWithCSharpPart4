@@ -89,7 +89,7 @@ decimal newProfit = 63000000.0m;
 // Console.WriteLine("");
 // Console.WriteLine("Here's a quick comparison:\n");
 
-string comparisonMessage = "";
+// string comparisonMessage = "";
 
 // comparisonMessage += $"{currentProduct.PadRight(20)}{currentReturn:P2}  {currentProfit:C2}\n";
 // comparisonMessage += $"{newProduct.PadRight(20)}{newReturn:P2}  {newProfit:C2}\n";
