@@ -1,12 +1,12 @@
-﻿string message = "Find what is (inside the parentheses)";
+﻿// string message = "Find what is (inside the parentheses)";
 
-int openingPosition = message.IndexOf('(');
-int closingPosition = message.IndexOf(')');
+// int openingPosition = message.IndexOf('(');
+// int closingPosition = message.IndexOf(')');
 
-// Console.WriteLine(openingPosition);
-// Console.WriteLine(closingPosition);
+// // Console.WriteLine(openingPosition);
+// // Console.WriteLine(closingPosition);
 
-openingPosition++;
+// openingPosition++;
 
-int length = closingPosition - openingPosition;
-Console.WriteLine(message.Substring(openingPosition, length));
+// int length = closingPosition - openingPosition;
+// Console.WriteLine(message.Substring(openingPosition, length));
