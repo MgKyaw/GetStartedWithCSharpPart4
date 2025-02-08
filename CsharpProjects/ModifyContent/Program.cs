@@ -11,15 +11,15 @@
 // int length = closingPosition - openingPosition;
 // Console.WriteLine(message.Substring(openingPosition, length));
 
-string message = "What is the value <span>between the tags</span>?";
+// string message = "What is the value <span>between the tags</span>?";
 
-const string openSpan = "<span>";
-const string closeSpan = "</span>";
+// const string openSpan = "<span>";
+// const string closeSpan = "</span>";
 
-int openingPosition = message.IndexOf(openSpan);
-int closingPosition = message.IndexOf(closeSpan);
+// int openingPosition = message.IndexOf(openSpan);
+// int closingPosition = message.IndexOf(closeSpan);
 
-openingPosition += openSpan.Length;
+// openingPosition += openSpan.Length;
 
-int length = closingPosition - openingPosition;
-Console.WriteLine(message.Substring(openingPosition, length));
+// int length = closingPosition - openingPosition;
+// Console.WriteLine(message.Substring(openingPosition, length));
