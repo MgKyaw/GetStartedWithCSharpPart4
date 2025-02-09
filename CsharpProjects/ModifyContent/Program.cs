@@ -56,9 +56,9 @@
 //     message = message.Substring(closingPosition + 1);
 // }
 
-string message = "Hello, world!";
-char[] charsToFind = { 'a', 'e', 'i'};
+// string message = "Hello, world!";
+// char[] charsToFind = { 'a', 'e', 'i'};
 
-int index = message.IndexOfAny(charsToFind);
+// int index = message.IndexOfAny(charsToFind);
 
-Console.WriteLine($"Found '{message[index]}' in '{message}' at index: {index}.");
+// Console.WriteLine($"Found '{message[index]}' in '{message}' at index: {index}.");
