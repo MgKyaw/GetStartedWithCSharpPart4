@@ -143,7 +143,37 @@ const string input = "<div><h2>Widgets &trade;</h2><span>5000</span></div>";
 string quantity = "";
 string output = "";
 
-// Your work here
+string openTag = "<span>";
+string closeTag = "</span>";
 
-Console.WriteLine(quantity);
-Console.WriteLine(output);
+int openingPosition = input.IndexOf(openTag);
+
+if (openingPosition != -1)
+{
+    int closingPosition = input.IndexOf(closeTag, openingPosition);
+    if (closingPosition != -1)
+    {
+        openingPosition += openTag.Length;
+        int length = closingPosition - openingPosition;
+        quantity = input.Substring(openingPosition, length);
+    }
+}
+
+openTag = "<div>";
+closeTag = "</div>";
+
+openingPosition = input.IndexOf(openTag);
+
+if (openingPosition != -1)
+{
+    int closingPosition = input.IndexOf(closeTag, openingPosition);
+    if (closingPosition != -1)
+    {
+        openingPosition += openTag.Length;
+        int length = closingPosition - openingPosition;
+        output = input.Substring(openingPosition, length);
+    }
+}
+
+Console.WriteLine($"Quantity: {quantity}");
+Console.WriteLine($"Output: {output}");
