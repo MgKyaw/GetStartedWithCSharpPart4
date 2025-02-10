@@ -143,39 +143,41 @@ const string input = "<div><h2>Widgets &trade;</h2><span>5000</span></div>";
 string quantity = "";
 string output = "";
 
-string openTag = "<span>";
-string closeTag = "</span>";
+// Exercise 
 
-int openingPosition = input.IndexOf(openTag);
+// string openTag = "<span>";
+// string closeTag = "</span>";
 
-if (openingPosition != -1)
-{
-    int closingPosition = input.IndexOf(closeTag, openingPosition);
-    if (closingPosition != -1)
-    {
-        openingPosition += openTag.Length;
-        int length = closingPosition - openingPosition;
-        quantity = input.Substring(openingPosition, length);
-    }
-}
+// int openingPosition = input.IndexOf(openTag);
 
-openTag = "<div>";
-closeTag = "</div>";
+// if (openingPosition != -1)
+// {
+//     int closingPosition = input.IndexOf(closeTag, openingPosition);
+//     if (closingPosition != -1)
+//     {
+//         openingPosition += openTag.Length;
+//         int length = closingPosition - openingPosition;
+//         quantity = input.Substring(openingPosition, length);
+//     }
+// }
 
-openingPosition = input.IndexOf(openTag);
+// openTag = "<div>";
+// closeTag = "</div>";
 
-if (openingPosition != -1)
-{
-    int closingPosition = input.IndexOf(closeTag, openingPosition);
-    if (closingPosition != -1)
-    {
-        openingPosition += openTag.Length;
-        int length = closingPosition - openingPosition;
-        output = input.Substring(openingPosition, length);
+// openingPosition = input.IndexOf(openTag);
 
-        output = output.Replace("&trade;", "&reg;");
-    }
-}
+// if (openingPosition != -1)
+// {
+//     int closingPosition = input.IndexOf(closeTag, openingPosition);
+//     if (closingPosition != -1)
+//     {
+//         openingPosition += openTag.Length;
+//         int length = closingPosition - openingPosition;
+//         output = input.Substring(openingPosition, length);
 
-Console.WriteLine($"Quantity: {quantity}");
-Console.WriteLine($"Output: {output}");
+//         output = output.Replace("&trade;", "&reg;");
+//     }
+// }
+
+// Console.WriteLine($"Quantity: {quantity}");
+// Console.WriteLine($"Output: {output}");
