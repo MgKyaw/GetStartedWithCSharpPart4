@@ -172,6 +172,8 @@ if (openingPosition != -1)
         openingPosition += openTag.Length;
         int length = closingPosition - openingPosition;
         output = input.Substring(openingPosition, length);
+
+        output = output.Replace("&trade;", "&reg;");
     }
 }
 
